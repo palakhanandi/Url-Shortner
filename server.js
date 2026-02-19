@@ -5,8 +5,9 @@ const QRCode = require("qrcode");
 const sqlite3 = require("sqlite3").verbose();
 
 const app = express();
-const PORT = 4000;
-const BASE_URL = `http://localhost:${PORT}`;
+const PORT = process.env.PORT || 4000;
+const BASE_URL = process.env.BASE_URL || `http://localhost:${PORT}`;
+
 
 /* ---------- Database ---------- */
 const db = new sqlite3.Database("./shortly.db");

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shortly | URL Shortener</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>🔗 Shortly</h1>
+    <p class="tagline">Short links. Big impact.</p>
+
+    <div class="card">
+      <input type="text" id="url" placeholder="Paste your long URL here..." />
+      <input type="text" id="alias" placeholder="Custom alias (optional)" />
+      <button onclick="shorten()">Shorten URL</button>
+
+      <div id="result"></div>
+      <div id="qr"></div>
+      <div id="analytics"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

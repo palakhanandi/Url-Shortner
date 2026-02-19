@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.6rem;
+  text-shadow: 0 0 10px rgba(0, 255, 171, 0.6);
+}
+
+.tagline {
+  margin-bottom: 20px;
+  opacity: 0.85;
+}
+
+.card {
+  background: rgba(20, 20, 40, 0.85);
+  backdrop-filter: blur(12px);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background: #1c1c3a;
+  color: #ffffff;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #00ffab;
+  color: #003d2b;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px #00ffab;
+}
+
+#result,
+#qr,
+#analytics {
+  margin-top: 20px;
+  text-align: left;
+}
+
+#result a {
+  color: #00ffab;
+  word-break: break-all;
+}
+
+.analytics-box {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#qr img {
+  display: block;
+  margin: 15px auto;
+  width: 150px;
+}
+
